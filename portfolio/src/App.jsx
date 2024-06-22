@@ -5,6 +5,8 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import Skills from "./Components/Skill";
+import Resume from "./Components/Resume";
+import resumePdf from "./assets/pdf/Maurice-Minin-Dsouza.pdf";
 
 function App() {
   return (
@@ -24,10 +26,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
-
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        */}
+        <Route path="/resume" element={resumePdf && <Resume />} />
       </Routes>
       <Footer />
     </Router>
