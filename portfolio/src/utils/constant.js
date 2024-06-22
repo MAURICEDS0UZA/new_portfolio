@@ -49,7 +49,7 @@ const PROJECTS = [
       "Testing",
       "Debugging",
     ],
-    link: "#",
+    link: "https://shoppingapp27.netlify.app/",
     image: Shopping,
   },
 ];
