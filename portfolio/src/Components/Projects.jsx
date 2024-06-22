@@ -2,23 +2,23 @@ import { PROJECTS } from "../utils/constant";
 
 const Projects = () => {
   return (
-    <section className="min-h-screen bg-gray-100 p-6 font-serif">
+    <section className="min-h-max bg-gray-100 p-6 font-serif">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">
           Projects
         </h2>
 
-        <div className="flex gap-6 flex-wrap ">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {PROJECTS.map((project, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md flex-1 relative"
+              className="bg-white p-6 rounded-lg shadow-md   relative"
             >
               {console.log(project.image)}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-60 object-fit rounded-md mb-4"
+                className="w-full h-72  object-fit rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2 text-gray-900">
                 {project.title}
