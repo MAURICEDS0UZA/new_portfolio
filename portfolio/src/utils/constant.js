@@ -96,4 +96,6 @@ const SOCIALMEDIA = [
   },
 ];
 
-export { PROJECTS, SKILLS, SOCIALMEDIA };
+const RESUMEURL =
+  "https://app.flowcv.com/api/public/download_resume?token=a1ip7tj9ag";
+export { PROJECTS, SKILLS, SOCIALMEDIA, RESUMEURL };
