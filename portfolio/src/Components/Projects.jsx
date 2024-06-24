@@ -1,4 +1,5 @@
 import { PROJECTS } from "../utils/constant";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Projects = () => {
   return (
@@ -8,13 +9,12 @@ const Projects = () => {
           Projects
         </h2>
 
-        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
           {PROJECTS.map((project, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-lg shadow-md   relative"
             >
-              {console.log(project.image)}
               <img
                 src={project.image}
                 alt={project.title}
@@ -37,9 +37,10 @@ const Projects = () => {
               <a
                 href={project.link}
                 target="blank"
-                className="text-blue-600 hover:underline absolute bottom-3 left-8 "
+                className="text-blue-600 flex gap-2 items-center  absolute bottom-3 left-8 cursor-grab"
               >
-                View Project{""}🔗
+                View Project
+                <FaArrowUpRightFromSquare />
               </a>
             </div>
           ))}
