@@ -1,5 +1,6 @@
 import { SOCIALMEDIA } from "../utils/constant";
 import { FaSquareGithub, FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -63,7 +64,7 @@ const Contact = () => {
                 }}
                 className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
               >
-                <link to="/contact">Send Message</link>
+                <Link to="/contact">Send Message</Link>
               </button>
               <ToastContainer autoClose={false} />
             </form>

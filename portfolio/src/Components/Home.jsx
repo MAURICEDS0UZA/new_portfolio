@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <section className=" min-h-fit bg-gray-100 text-justify p-6 font-serif ">
@@ -5,7 +7,6 @@ const Home = () => {
         <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-gray-900 text-center ">
           Welcome to My Portfolio🧑‍💻
         </h1>
-
         <p className="text-base sm:text-lg text-gray-700 mb-6">
           Hello!{" "}
           <span className="italic font-semibold">
@@ -32,13 +33,13 @@ const Home = () => {
           Explore my portfolio to see my projects, skills, and experiences.
           Let's connect and create something amazing together!
         </p>
-
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="bg-gray-700  text-white flex items-center w-48 m-auto justify-center px-4 py-2 rounded-full shadow-md hover:bg-gray-800 font-semibold"
         >
+          {" "}
           Connect 🤝
-        </a>
+        </Link>
       </div>
     </section>
   );
