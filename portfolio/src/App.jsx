@@ -6,6 +6,7 @@ import Skills from "./Components/Skill";
 import resumePdf from "./assets/pdf/Maurice-Minin-Dsouza.pdf";
 import Home from "./Components/Home";
 import { lazy, Suspense } from "react";
+import ShimmerResume from "./Components/ShimmerResume";
 
 const Project = lazy(() => import("./Components/Projects"));
 const Resume = lazy(() => import("./Components/Resume"));
@@ -40,7 +41,13 @@ function App() {
         <Route
           path="/resume"
           element={
-            <Suspense fallback={<div>Loading Resume...</div>}>
+            <Suspense
+              fallback={
+                <div>
+                  <ShimmerResume />
+                </div>
+              }
+            >
               {resumePdf && <Resume />}
             </Suspense>
           }
