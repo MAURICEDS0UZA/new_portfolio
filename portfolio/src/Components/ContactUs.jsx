@@ -1,6 +1,12 @@
 import { SOCIALMEDIA } from "../utils/constant";
+import { FaSquareGithub, FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const notify = () => {
+    toast.success("Thank you for connecting 😍!", { autoClose: 1000 });
+  };
   return (
     <section className="min-h-screen bg-gray-100 p-6 font-serif">
       <div className="max-w-4xl mx-auto">
@@ -51,10 +57,15 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  notify();
+                }}
                 className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
               >
                 Send Message
               </button>
+              <ToastContainer autoClose={false} />
             </form>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/2">
@@ -63,9 +74,20 @@ const Contact = () => {
             </h3>
             <ul className="space-y-4">
               {SOCIALMEDIA.map((link, index) => (
-                <li key={index} className="flex items-center space-x-4">
-                  <i className={`${link.icon} text-blue-600 text-2xl`}></i>
-                  <a href={link.url} className="text-blue-600 hover:underline">
+                <li key={index} className="flex items-center space-x-8">
+                  {console.log(link.icon)}
+                  {link.icon == "FaSquareGithub" ? (
+                    <FaSquareGithub />
+                  ) : link.icon == "FaSquareXTwitter" ? (
+                    <FaSquareXTwitter />
+                  ) : (
+                    <FaLinkedin />
+                  )}
+                  <a
+                    href={link.url}
+                    target="blank"
+                    className="text-blue-600 hover:underline"
+                  >
                     {link.platform}
                   </a>
                 </li>
