@@ -1,3 +1,4 @@
+import { FaSquareGithub, FaSquareEnvelope, FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white p-6 font-serif">
@@ -7,29 +8,26 @@ const Footer = () => {
             href="https://www.linkedin.com/in/maurice-dsouza/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400"
+            className="hover:text-blue-400 flex gap-2 items-center"
           >
-            <i className="fab fa-linkedin fa-beat-fade" aria-hidden="true"></i>{" "}
+            <FaLinkedin />
             LinkedIn
           </a>
           <a
             href="https://github.com/MAURICEDS0UZA"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-400"
+            className="hover:text-orange-400 flex gap-2 items-center"
           >
-            <i className="fab fa-github" aria-hidden="true"></i> Github
+            <FaSquareGithub /> Github
           </a>
           <a
             href="mailto:maurice.m.dsouza@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-red-400"
+            className="hover:text-green-400 flex gap-2 items-center"
           >
-            <i
-              className="fa-solid fa-envelope fa-beat-fade"
-              aria-hidden="true"
-            ></i>{" "}
+            <FaSquareEnvelope />
             Gmail
           </a>
         </div>
