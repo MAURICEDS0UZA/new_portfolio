@@ -4,12 +4,11 @@ import Contact from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import Skills from "./Components/Skill";
 import resumePdf from "./assets/pdf/Maurice-Minin-Dsouza.pdf";
-
+import Home from "./Components/Home";
 import { lazy, Suspense } from "react";
 
 const Project = lazy(() => import("./Components/Projects"));
 const Resume = lazy(() => import("./Components/Resume"));
-const Home = lazy(() => import("./Components/Home"));
 
 function App() {
   return (
@@ -20,8 +19,8 @@ function App() {
           path="/"
           element={
             <>
+              <Home />
               <Suspense fallback={<div>Loading ...</div>}>
-                <Home />
                 <Project />
               </Suspense>
               <Skills />
