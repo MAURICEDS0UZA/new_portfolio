@@ -63,7 +63,7 @@ const Contact = () => {
                 }}
                 className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
               >
-                Send Message
+                <link to="/contact">Send Message</link>
               </button>
               <ToastContainer autoClose={false} />
             </form>
