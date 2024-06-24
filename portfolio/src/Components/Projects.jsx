@@ -16,6 +16,7 @@ const Projects = () => {
               className="bg-white p-6 rounded-lg shadow-md   relative"
             >
               <img
+                loading="lazy"
                 src={project.image}
                 alt={project.title}
                 className="w-full h-72  object-fit rounded-md mb-4"
