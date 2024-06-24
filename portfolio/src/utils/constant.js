@@ -82,17 +82,17 @@ const SOCIALMEDIA = [
   {
     platform: "LinkedIn",
     url: "https://www.linkedin.com/in/maurice-minin-dsouza/",
-    icon: "fab fa-linkedin",
+    icon: "FaLinkedin",
   },
   {
     platform: "GitHub",
     url: "https://github.com/mauricedsouza",
-    icon: "fab fa-github",
+    icon: "FaSquareGithub",
   },
   {
     platform: "Twitter",
     url: "https://twitter.com/mauricedsouza",
-    icon: "fab fa-twitter",
+    icon: "FaSquareXTwitter",
   },
 ];
 
