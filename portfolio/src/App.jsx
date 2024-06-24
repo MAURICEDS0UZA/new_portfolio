@@ -7,6 +7,7 @@ import resumePdf from "./assets/pdf/Maurice-Minin-Dsouza.pdf";
 import Home from "./Components/Home";
 import { lazy, Suspense } from "react";
 import ShimmerResume from "./Components/ShimmerResume";
+import { FaBomb } from "react-icons/fa6";
 
 const Project = lazy(() => import("./Components/Projects"));
 const Resume = lazy(() => import("./Components/Resume"));
@@ -21,7 +22,13 @@ function App() {
           element={
             <>
               <Home />
-              <Suspense fallback={<div>Loading ...</div>}>
+              <Suspense
+                fallback={
+                  <div className="bg-gray-100 ">
+                    <FaBomb className="animate-bounce flex m-auto size-6" />
+                  </div>
+                }
+              >
                 <Project />
               </Suspense>
               <Skills />
