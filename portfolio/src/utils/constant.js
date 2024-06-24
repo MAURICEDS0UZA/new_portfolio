@@ -81,17 +81,17 @@ const SKILLS = [
 const SOCIALMEDIA = [
   {
     platform: "LinkedIn",
-    url: "https://www.linkedin.com/in/maurice-minin-dsouza/",
+    url: "https://www.linkedin.com/in/maurice-dsouza/",
     icon: "FaLinkedin",
   },
   {
     platform: "GitHub",
-    url: "https://github.com/mauricedsouza",
+    url: "https://github.com/MAURICEDS0UZA",
     icon: "FaSquareGithub",
   },
   {
     platform: "Twitter",
-    url: "https://twitter.com/mauricedsouza",
+    url: "https://twitter.com/mauricedsouz",
     icon: "FaSquareXTwitter",
   },
 ];
