@@ -66,6 +66,7 @@ const SKILLS = [
       "Bootstrap",
       "Babel.js",
       "Redux",
+      "Electron.js",
     ],
   },
   {
@@ -74,7 +75,7 @@ const SKILLS = [
   },
   {
     category: "Tools & Platforms",
-    skills: ["Git & GitHub", "Google Cloud Services", "AWS", "Jest"],
+    skills: ["Git & GitHub", "Google Cloud Services", "AWS", "Jest", "Webpack"],
   },
 ];
 
@@ -96,6 +97,5 @@ const SOCIALMEDIA = [
   },
 ];
 
-const RESUMEURL =
-  "https://app.flowcv.com/api/public/download_resume?token=a1ip7tj9ag";
+const RESUMEURL = "https://flowcv.com/resume/a1ip7tj9ag";
 export { PROJECTS, SKILLS, SOCIALMEDIA, RESUMEURL };

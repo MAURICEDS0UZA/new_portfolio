@@ -10,28 +10,36 @@ const Home = () => {
         <p className="text-base sm:text-lg text-gray-700 mb-6">
           Hello!{" "}
           <span className="italic font-semibold">
-            I'm Maurice Minin Dsouza,
-          </span>{" "}
-          a passionate Front-end Developer based in Bangalore, India. With
-          extensive experience in web development , I have honed my skills in
-          creating, engaging efficient web applications.
+            {"I'm Maurice Minin Dsouza,"}
+          </span>
+          {
+            " a passionate Front-end Developer based in Bangalore, India, with over 3 years of professional experience building modern, scalable, and user-friendly web applications."
+          }
         </p>
         <p className="hidden sm:block text-base sm:text-lg text-gray-700 mb-6">
-          In my current role at Tata Consultancy Services, I have developed and
-          optimized numerous applications, significantly enhancing user
-          experiences and data integrity. My expertise in React.js, Tailwind
-          CSS, and various other modern technologies enables me to build
-          responsive and dynamic web interfaces.
+          In my current role at Tata Consultancy Services, I’ve had the
+          opportunity to lead and contribute to high-impact FinTech projects. My
+          work focuses on building reusable, performance-optimized interfaces
+          using technologies like{" "}
+          <span className="font-semibold">React.js</span>,{" "}
+          <span className="font-semibold">Tailwind CSS</span>,{" "}
+          <span className="font-semibold">TypeScript</span>,{" "}
+          <span className="font-semibold">Redux Toolkit</span>, and{" "}
+          <span className="font-semibold">Redux-Saga</span>. I’ve also developed
+          cross-platform applications with{" "}
+          <span className="font-semibold">Electron.js</span>, helping teams
+          reduce development cycles and deliver consistent experiences across
+          devices.
         </p>
         <p className="hidden sm:block text-base sm:text-lg text-gray-700 mb-6">
-          My projects showcase a strong emphasis on performance, code quality,
-          and best practices. I am dedicated to continuous learning and staying
-          updated with the latest industry trends, ensuring that my work remains
-          at the cutting edge of web development.
+          {`I’m driven by clean code, pixel-perfect design, and a strong focus on
+        performance and accessibility. I enjoy collaborating with
+        cross-functional teams and staying up to date with modern web
+        development practices.`}
         </p>
         <p className="hidden sm:block text-base sm:text-lg text-gray-700 mb-6">
-          Explore my portfolio to see my projects, skills, and experiences.
-          Let's connect and create something amazing together!
+          {`Explore my portfolio to see my projects, skills, and experiences.
+          Let's connect and create something amazing together!`}
         </p>
         <Link
           to="/contact"
