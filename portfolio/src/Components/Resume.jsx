@@ -1,7 +1,7 @@
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
-import resumePdf from "../assets/pdf/Maurice_Minin_Dsouza_FlowCV_Resum";
+import resumePdf from "../assets/pdf/Maurice_Minin_Dsouza_FlowCV_Resum.pdf";
 import { RESUMEURL } from "../utils/constant";
 
 const Resume = () => {
