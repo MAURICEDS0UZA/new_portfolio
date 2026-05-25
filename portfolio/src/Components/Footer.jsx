@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <p className="text-sm">
           Made by Maurice
-          <br />© 2025
+          <br />© 2026
         </p>
       </div>
     </footer>
