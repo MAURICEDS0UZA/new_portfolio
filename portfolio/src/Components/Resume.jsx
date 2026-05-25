@@ -13,7 +13,7 @@ const Resume = () => {
           <Worker
             workerUrl={`https://unpkg.com/pdfjs-dist@3.11/build/pdf.worker.min.js`}
           >
-            <Viewer fileUrl={resumePdf} />
+            <Viewer fileUrl={RESUMEURL} />
           </Worker>
         </div>{" "}
         <a
